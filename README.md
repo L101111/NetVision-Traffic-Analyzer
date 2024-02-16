@@ -1,12 +1,14 @@
 <h1>NetVision</h1>
 
 <img src="https://github.com/L101111/NetVision-Traffic-Analyzer/blob/main/screen.png" width="650px"/>
+
 <h1>Features</h1>
 <li>Real-time packet capture and analysis.</li>
 <li>Identification of various network protocols, including TCP, UDP, ICMP, ARP, SMTP, FTP, SSH, HTTP, and HTTPS.</li>
 <li>Display of source and destination IP addresses, along with port numbers.</li>
 <li>User-friendly interface for ease of use.</li>
 <li>Customizable packet analysis functionality.</li>
+
 <h1>Protocols</h1>
 <ul>
 <li>TCP (Transmission Control Protocol)</li>
