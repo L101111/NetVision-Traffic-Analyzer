@@ -7,9 +7,7 @@
 <img src="https://github.com/L101111/NetVision-Traffic-Analyzer/blob/main/screen.png" width="650px" />
 </div>
 
-**⚠️ IMPORTANT ⚠️**
 
-<p><i>This project is created for educational and ethical purposes only. Any actions and activities performed using this program should comply with applicable laws and ethical standards. The developers of this program do not condone any illegal or unethical use.</i></p>
 
 <h1>Features</h1>
 <li>Real-time packet capture and analysis.</li>
@@ -31,6 +29,10 @@
 <li>HTTPS (Hypertext Transfer Protocol Secure)</li>
   
 </ul>
+
+**⚠️ IMPORTANT ⚠️**
+
+<p><i>This project is created for educational and ethical purposes only. Any actions and activities performed using this program should comply with applicable laws and ethical standards. The developers of this program do not condone any illegal or unethical use.</i></p>
 
 <h1>Enjoy</h1>
 
