@@ -30,6 +30,9 @@
   
 </ul>
 
+# License 
+<p>See <a href="https://github.com/L101111/NetVision-Traffic-Analyzer/blob/main/LICENSE">LICENSE</a> for more information.</p>
+
 **⚠️ IMPORTANT ⚠️**
 
 <p><i>This project is created for educational and ethical purposes only. Any actions and activities performed using this program should comply with applicable laws and ethical standards. The developers of this program do not condone any illegal or unethical use.</i></p>
