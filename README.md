@@ -1,8 +1,8 @@
 <div align='center>
-<h1>NetVision</h1>
-
-
-<img src="https://github.com/L101111/NetVision-Traffic-Analyzer/blob/main/screen.png" width="650px" />
+    <h1>NetVision</h1>
+    
+    
+    <img src="https://github.com/L101111/NetVision-Traffic-Analyzer/blob/main/screen.png" width="650px" />
 </div>
 
 <h1>Features</h1>
