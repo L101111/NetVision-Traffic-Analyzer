@@ -14,7 +14,7 @@
 <li>Identification of various network protocols, including TCP, UDP, ICMP, ARP, SMTP, FTP, SSH, HTTP, and HTTPS.</li>
 <li>Display of source and destination IP addresses, along with port numbers.</li>
 <li>User-friendly interface for ease of use.</li>
-<li>Customizable packet analysis functionality.</li>
+
 
 <h1>Protocols</h1>
 <ul>
