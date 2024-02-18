@@ -13,7 +13,7 @@ if len(sys.argv)>1:
              |_| \_|\___|\__| \_/  |_|___/_|\___/|_| |_|
                                     Made by hei$enberg                         
 
-            Welcome to SpydeR Network Traffic Analyzer!
+            Welcome to NetVision Network Traffic Analyzer!
 
                                 * * *
 
