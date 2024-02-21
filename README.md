@@ -18,17 +18,28 @@
 
 <h1>Protocols</h1>
 <ul>
-<li>TCP (Transmission Control Protocol)</li>
-<li>UDP (User Datagram Protocol)</li>
-<li>ICMP (Internet Control Message Protocol)</li>
-<li>ARP (Address Resolution Protocol)</li>
-<li>SMTP (Simple Mail Transfer Protocol)</li>
-<li>FTP (File Transfer Protocol)</li>
-<li>SSH (Secure Shell Protocol)</li>
-<li>HTTP (Hypertext Transfer Protocol)</li>
-<li>HTTPS (Hypertext Transfer Protocol Secure)</li>
-  
+    <li>TCP (Transmission Control Protocol)</li>
+    <li>UDP (User Datagram Protocol)</li>
+    <li>ICMP (Internet Control Message Protocol)</li>
+    <li>HTTP (Hypertext Transfer Protocol)</li>
+    <li>HTTPS (HTTP Secure)</li>
+    <li>FTP (File Transfer Protocol)</li>
+    <li>SSH (Secure Shell)</li>
+    <li>Telnet</li>
+    <li>DNS (Domain Name System)</li>
+    <li>SNMP (Simple Network Management Protocol)</li>
+    <li>SMTP (Simple Mail Transfer Protocol)</li>
+    <li>POP3 (Post Office Protocol version 3)</li>
+    <li>IMAP (Internet Message Access Protocol)</li>
+    <li>DHCP (Dynamic Host Configuration Protocol)</li>
+    <li>ARP (Address Resolution Protocol)</li>
+    <li>RDP (Remote Desktop Protocol)</li>
+    <li>SIP (Session Initiation Protocol)</li>
+    <li>RTP (Real-time Transport Protocol)</li>
+    <li>TLS/SSL (Transport Layer Security/Secure Sockets Layer)</li>
+    <li>NTP (Network Time Protocol)</li>
 </ul>
+
 
 **⚠️ IMPORTANT ⚠️**
 
