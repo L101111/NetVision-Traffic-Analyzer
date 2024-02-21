@@ -3,9 +3,9 @@ import sys
 from termcolor import colored, cprint
 
 
-if len(sys.argv)>1:
-    if sys.argv[1]=="-h" or sys.argv[1]=="--help" or sys.argv[1]=="help":
-        print("""
+
+def open_help():
+    print("""
               _   _      _ __     ___     _             
              | \ | | ___| |\ \   / (_)___(_) ___  _ __  
              |  \| |/ _ \ __\ \ / /| / __| |/ _ \| '_ \ 
@@ -13,7 +13,7 @@ if len(sys.argv)>1:
              |_| \_|\___|\__| \_/  |_|___/_|\___/|_| |_|
                                     Made by hei$enberg                         
 
-            Welcome to NetVision Network Traffic Analyzer!
+            Welcome to SpydeR Network Traffic Analyzer!
 
                                 * * *
 
@@ -36,7 +36,7 @@ if len(sys.argv)>1:
             - Friedrich Nietzsche
             
             """)
-        sys.exit()
+
 
 cprint("""
 
@@ -52,43 +52,63 @@ cprint("""
                                    
 """, "blue")
 
+protocols_list = [
+    "ICMP",
+    "HTTP",
+    "HTTPS",
+    "FTP",
+    "SSH",
+    "Telnet",
+    "DNS",
+    "SNMP",
+    "SMTP",
+    "POP3",
+    "IMAP",
+    "DHCP",
+    "ARP",
+    "RDP",
+    "SIP",
+    "RTP",
+    "TLS/SSL",
+    "NTP"
+]
+
 
 
 
 def packet_callback(packet):
+
     if IP in packet:
         src_ip = packet[IP].src
         dst_ip = packet[IP].dst
         cprint(f"src.IP: {src_ip}, dst.IP: {dst_ip}", "blue")
 
+
         if TCP in packet:
             src_port = packet[TCP].sport
             dst_port = packet[TCP].dport
-            print(f"src.Port: {src_port}, dst.Port: {dst_port}, /TCP")
-
-            if dst_port == 25:
-                print("Protocol: SMTP")
-            elif dst_port == 21:
-                print("Protocol: FTP")
-            elif dst_port == 22:
-                print("Protocol: SSH")
-            elif dst_port == 80:
-                print("Protocol: HTTP")
-            elif dst_port == 443:
-                print("Protocol: HTTPS")
+            p=colored('/TCP', 'yellow')
+            print(f"src.Port: {src_port}, dst.Port: {dst_port}, {p}")
         elif UDP in packet:
             src_port = packet[UDP].sport
             dst_port = packet[UDP].dport
-            print(f"src.Port: {src_port}, dst.Port: {dst_port}, /UDP")
-        elif ICMP in packet:
-            print("Protocol: ICMP")
-        elif ARP in packet:
-            print("Protocol: ARP")
-        else:
-            print('other')
+            p=colored('/UDP', 'yellow')
+            print(f"src.Port: {src_port}, dst.Port: {dst_port}, {p}")
+        
+
+           
+        for i in protocols_list:
+            if i in packet:
+                i=colored(i, 'yellow')
+                print(f'Protocol: {i}')
 
 try:
-    print("Starting packet capture...")
+
+    if len(sys.argv)>2: 
+        open_help()
+        sys.exit()
+
+    cprint("Starting packet capture...", 'yellow')
     sniff(prn=packet_callback, store=0)
 except KeyboardInterrupt:
     print('exiting...')
